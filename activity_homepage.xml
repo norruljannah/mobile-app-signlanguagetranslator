@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#93B7D9"
+    tools:context=".Homepage">
+
+    <ImageButton
+        android:id="@+id/bckbut"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:background="@drawable/backicon"
+        app:layout_constraintEnd_toStartOf="@+id/appname2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/helimg"
+        android:layout_width="288dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/downloadd"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/appname2"
+        android:layout_width="293dp"
+        android:layout_height="78dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:text="Homepage"
+        android:textColor="#4B4E5A"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/tvor"
+        android:layout_width="276dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:text="OR"
+        android:textColor="#090808"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/translate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/translate"
+        android:layout_width="325dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Translate the sign language"
+        android:textColor="#4B4E5A"
+        android:textColorHighlight="#954848"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/camerabut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/camerabut"
+        android:layout_width="144dp"
+        android:layout_height="103dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/cameraa"
+        android:foregroundGravity="right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="328dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="sans-serif-light"
+        android:text="Learn Basic Sign Language"
+        android:textColor="#090808"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
